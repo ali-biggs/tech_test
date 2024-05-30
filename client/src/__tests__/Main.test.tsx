@@ -19,7 +19,6 @@ describe("Main component", () => {
   test("initial state and status message", () => {
     render(<Main />);
     expect(screen.getByText("Next player is: X")).toBeInTheDocument();
-    //expect(screen.getAllByRole("button")).toHaveLength(9); // 3x3 board
   });
 
   test("clicking on a square updates the board", () => {
